@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<title>Flower Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body  bgcolor="#123ff7">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Flowers</a>
+    <a href="http://127.0.0.1:8000" class="w3-bar-item w3-button w3-hide-small w3-white">Homepage</a>
+    <a href="http://127.0.0.1:8000/flowers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Upload and Identify Flower</a>
+    <a href="http://127.0.0.1:8000/encrypt" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Encrypt Flower</a>
+   <a href="http://127.0.0.1:8000/bluetooth" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Bluetooth</a>
+    <a href="http://127.0.0.1:8000/about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
+    <a href="http://127.0.0.1:8000/contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000">Homepage</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/flowers">Upload and Identify Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/encrypt">Encrypt Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/bluetooth">Bluetooth</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/about">About</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/contact">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-green">Water Lily</h1>
+     <p><strong>Symbolism:</strong> Fertility, sexuality and creation</p>
+	<p><strong>Flower Color:</strong> Red, salmon, pink, white, yellow, orange, peach and near-black.</p>
+	<p><strong>Gardening Tips:</strong> Water lilies can be grown in a tub on the patio or in ponds of any size. They grow from tubers planted in pots beneath the water and send up stems with rounded leaves and star-shaped blossoms that float on the surface.Hardy lilies are dependable and easy to plant -- a good choice for the beginner. Daytime bloomers, they blossom in the morning and close after sunset, lasting three or four days before sinking beneath the surface. The flowers appear from spring to fall, blooming in all colors except blues and purples. Hardy water lilies go dormant in winter and may be left in the water or stored. Tropical water lilies, which bloom in more exotic colors, take a little more care but are well worth the effort. Their flowers are larger and more prolific. Night-blooming varieties have vibrant, almost electric colors. Tropical water lilies require a water temperature above 70 degrees F, and tubers must be removed from the pond in winter.</p>
+      <p><strong>Requires:</strong> Full Sunlight </p>
+	<p><strong>Best Season for Growth: </strong>Early spring</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="http://wallpaperdp.com/wp-content/uploads/2017/05/water-lily-flower-pond-aquatic.jpeg" alt="Mountain View" style="width:304px;height:150px;">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QNZmuCSiXO08DsPYEMz6x7IpO3GrbbeA3Njh5Co1M_h4BHR50Q" alt="Mountain View" style="width:304px;height:150px;">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-green">Hydrangea</h1>
+      <p><strong>Symbolism:</strong> Frigidness, heartlessness </p>
+       <p><strong>Flower Color:</strong> Typically  white, but in some species can be blue, red, pink, light purple, or dark purple. Change color base on pH   </p>
+	<p><strong>Gardening Tips:</strong>Most hydrangeas thrive in rich, porous, somewhat moist soils. Add compost to enrich poor soil. They prefer full sun in the morning, with some afternoon shade; however, many will grow and bloom in partial shade. This is especially true for the bigleaf hydrangeas (see Recommended Varieties below). Dig a hole as deep as the root ball and 2 to 3 times as wide Set the plant in the hole and fill it half full with soil. Water. After water is drained, fill the rest of the hole with soil. Water thoroughly. Space multiple hydrangeas about 3 to 10 feet apart.
+</p>
+      <p><strong>Requires:</strong> Partial Sunlight  </p>
+	<p><strong>Best Season for Growth: </strong> Spring or Fall</p>
+    </div>
+    <div class="w3-third w3-container">
+       <img src="https://cimg3.ibsrv.net/cimg/www.doityourself.com/660x300_100-1/695/Identifying-Diseases-In-Your-Impatiens-Plants-4695.jpg" alt="Mountain View" style="width:300px;height:150px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9d5wqbQlFULh6l_J5pKuR4mStLoyRG1E0cHtDD1nqBPO_V7Gkrg" alt="Mountain View" style="width:300px;height:150px;">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-green">Larkspur</h1>
+     <p><strong>Symbolism:</strong> Good News</p>
+      <p><strong>Flower Color:</strong> Typically pink, blue, purple and white</p>  
+	<p><strong>Gardening Tips:</strong> All parts of these plants are considered toxic to humans, especially the younger parts, causing severe digestive discomfort if ingested, and skin irritation. Larkspur, especially tall larkspur, is a significant cause of cattle poisoning on rangelands in the western United States. Larkspur is more common in high-elevation areas, and many ranchers delay moving cattle onto such ranges until late summer when the toxicity of the plants is reduced. Death is through cardiotoxic and neuromuscular blocking effects, and can occur within a few hours of ingestion. All parts of the plant contain various diterpenoid alkaloids, typified by methyllycaconitine, and are very poisonous.</p>
+      <p><strong>Requires:</strong> Full Sunlight  </p>
+	<p><strong>Best Season for Growth:</strong>Fall</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF-D0LCiDy9PCeLXlqA1SetNmbC2CDLZPhriujHiMu2HCZsER9" alt="" style="width:300px;height:150px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8OJwZR6CF07I4YYn8ps6_sRZ1cMjV7engTHwWDnJG93rNlKnX" alt="" style="width:300px;height:150px;">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/">1</a>
+      <a class="w3-button w3-black" href="http://127.0.0.1:8000/page2">2</a>
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/page3">3</a>
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/page4">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Flower App Project for Cis4930 Summer 2017</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

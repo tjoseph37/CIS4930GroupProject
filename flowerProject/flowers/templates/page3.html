@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Flower Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body  bgcolor="#fa4242">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Flowers</a>
+    <a href="http://127.0.0.1:8000" class="w3-bar-item w3-button w3-hide-small w3-white">Homepage</a>
+    <a href="http://127.0.0.1:8000/flowers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Upload and Identify Flower</a>
+    <a href="http://127.0.0.1:8000/encrypt" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Encrypt Flower</a>
+   <a href="http://127.0.0.1:8000/bluetooth" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Bluetooth</a>
+    <a href="http://127.0.0.1:8000/about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
+    <a href="http://127.0.0.1:8000/contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000">Homepage</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/flowers">Upload and Identify Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/encrypt">Encrypt Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/bluetooth">Bluetooth</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/about">About</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/contact">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-yellow">Fresia</h1>
+   <p><strong>Symbolism:</strong>Friendship, Innocence </p>
+   <p><strong>Flower Color: 
+</strong></p>
+	<p><strong>Gardening Tips:</strong> Find a location where the soil drains well. If there are still water puddles 5-6 hours after a hard rain, scout out another site. Or amend the soil with the addition of organic material to raise the level 2-3" to improve the drainage. Peat moss, compost, ground bark or decomposed manure all work well and are widely available. Freesia require planting sites that drain well. These plants will not thrive in soggy soil.
+    Site your freesia where they will receive full sun.
+    Dig holes and plant the bulbs 2” deep and 3” apart. Position the bulbs with the pointy end facing up.
+    After planting, water well to settle the soil around the bulbs. Roots will form in the fall. Winter will bring taller growth and flower stems will form in the spring.
+    When in bloom, feel free to cut freesia flowers for striking bouquets and sweet fragrance.
+    After blooming has finished for the season leave the foliage in place; don't cut it off. The leaves will gather sunlight, create food through photosynthesis and strengthen the bulb for the future. Water as needed during active growth periods; about 1" of moisture per week is a good estimate.
+    Later in the summer the leaves will yellow and die back as the plant slips into dormancy. Foliage many be removed at this point. Your freesia will rest for a few months before beginning the next growing cycle.</p>
+      <p><strong>Requires:</strong> Full sunlight, Light watering  </p>
+	<p><strong>Best Season for Growth:</strong></p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="http://www.flowermeaning.com/flower-pics/Freesias-Color-Meaning.jpg" alt="Mountain View" style="width:304px;height:150px;">
+     <img src="https://www.longfield-gardens.com/_ccLib/image/plants/DETA-258.jpg" alt="Mountain View" style="width:304px;height:150px;">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-yellow">Tulip</h1>
+      <p><strong>Symbolism:</strong> Good News</p>
+      <p><strong>Flower Color: </strong>    Green
+    Multicolor
+    Orange
+    Pink
+    Purple
+    Red
+    White
+    Yellow</p>
+      <p><strong>Gardening Tips:</strong>     Plant tulip bulbs in the fall, 6 to 8 weeks before a hard frost is expected and when soils are below 60 degrees F. (See our frost dates.) This is usually during September and October in the north, and October and November in the south. To find the best dates, see our fall bulb planting chart.
+    Nature never intended for bulbs to loll about above ground, so don’t delay planting the bulbs after purchase.
+    In southern climates with mild winters, you need to buy pre-chilled bulbs or chill them yourself in the refrigerator for about 12 weeks before planting. 
+    When selecting a site: Tulips prefer a site with full or afternoon sun. In Zones 7 and 8, choose a shady site or one with morning sun only. Soil must be well-draining, neutral to slightly acidic, fertile, and dry or sandy. All tulips dislike areas with excessive moisture. Tall varieties should be sheltered from strong winds.
+    Prepare the garden bed by using a garden fork or tiller to loosen the soil to a depth of 12 to 15 inches, then mix in a 2- to 4-inch layer of compost.
+    You’ll want to space bulbs 4 to 6 inches apart, so choose an appropriate plot size.
+    Plant bulbs deep—at least 8 inches, measuring from the base of the bulb. And that means digging even deeper, to loosen the soil and allow for drainage, or creating raised beds. Remember, the bigger the bulb, the deeper the hole it needs.
+    Set the bulb in the hole with the pointy end up. Cover with soil and press soil firmly.
+    Water bulbs right after planting. Although they can’t bear wet feet, bulbs need water to trigger growth.
+    To deter mice and moles—if they have been a problem—put holly or any other thorny leaves in the planting holes. Some gardeners use kitty litter or crushed gravel. If ravenous voles and rodents are a real problem, you may need to take stronger measures, such as planting bulbs in a buried wire cages.
+    If you’re planning to raise perennial tulips, feed them when you plant them in the fall. Bulbs are their own complete storage system and contain all of the nutrients they need for one year. Use organic material, compost, or a balanced time-release bulb food.
+    Don’t lose hope if you’re planting your tulips late in the season—just use these tips.
+
+</p>
+      <p><strong>Requires:</strong> Full Sunlight  </p>
+      <p><strong>Best Season for Growth: </strong>Fall</p>
+    </div>
+    <div class="w3-third w3-container">
+       <img src="http://www.woodenshoe.com/media/attila-graffiti-tulip.jpg" alt="Mountain View" style="width:300px;height:150px;">
+        <img src="http://jonvilma.com/images/tulip-6.jpg" alt="Mountain View" style="width:300px;height:150px;">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-yellow">Marigold</h1>
+      <p><strong>Symbolism:</strong> Passion, creativity</p>
+       <p><strong>Flower Color: </strong> Red, orange and yellow. Red and orange bicolor patterns are also found.</p>
+	<p><strong>Gardening Tips: </strong>In order for your marigolds to be ready for planting outdoors in the spring, you will need to start growing marigolds from seed indoors about 50 to 60 days before the last frost date. Start with a tray or pot filled with damp soilless potting mix. Sprinkle the marigold seeds over the potting mix. Cover the seeds with a thin layer of vermiculite. Cover the pot or tray with plastic wrap and place the tray in a warm spot. The top of the refrigerator works well. Marigold seeds do not need any light to germinate, so you don’t need to provide light yet. The next step for growing marigolds from seed is to check the planted marigold seeds daily for germination. Typically, marigolds will take three to four days to germinate, but may take a few days longer if the location is cooler. Once the marigold seedlings appear, remove the plastic wrap and move the tray to a location where the seedlings will get at least five hours or more of light each day. The light can be from an artificial source. As the seedlings grow, keep the potting mix damp by watering from below. This will help to prevent damping off. Once the seedlings have two sets of true leaves, they can be transplanted to their own pots where they can grow indoors under light until after the last frost has passed.
+
+Read more at Gardening Know How: Growing Marigold Flowers: How To Grow Marigolds https://www.gardeningknowhow.com/ornamental/flowers/marigold/growing-marigold-flowers.htm</p>
+      <p><strong>Requires:</strong> Full Sunlight, Only needs to be watered when weather has been dry for more than two weeks.  </p>
+	<p><strong>Best Season for Growth:</strong> Spring</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy2yjHegzP5738HClNGHCB24BDMFK2TBsKMpqy8aTvlOAb7DXU" alt="" style="width:300px;height:150px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUZCFw52he0gS_homRdWZxsV5wCk14dRKyJ1KTEzcfWmo6OCYeNA" alt="Mountain View" style="width:300px;height:150px;">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/">1</a>
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/page2">2</a>
+      <a class="w3-button w3-black" href="http://127.0.0.1:8000/page3">3</a>
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/page4">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Flower App Project for Cis4930 Summer 2017</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

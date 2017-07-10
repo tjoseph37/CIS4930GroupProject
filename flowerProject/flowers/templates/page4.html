@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<title>Flower Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body  bgcolor="#ec33ff">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Flowers</a>
+    <a href="http://127.0.0.1:8000" class="w3-bar-item w3-button w3-hide-small w3-white">Homepage</a>
+    <a href="http://127.0.0.1:8000/flowers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Upload and Identify Flower</a>
+    <a href="http://127.0.0.1:8000/encrypt" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Encrypt Flower</a>
+   <a href="http://127.0.0.1:8000/bluetooth" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Bluetooth</a>
+    <a href="http://127.0.0.1:8000/about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
+    <a href="http://127.0.0.1:8000/contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000">Homepage</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/flowers">Upload and Identify Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/encrypt">Encrypt Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/bluetooth">Bluetooth</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/about">About</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/contact">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-pink">Sweet Pea</h1>
+      <p><strong>Symbolism: </strong>Good News</p>
+	<p><strong>Flower Color:     Blue, 
+    Pink, 
+    Purple, 
+    Red, 
+    White, 
+    Yellow</strong></p>
+	<p><strong>Gardening Tips: </strong>    Early sowing is one of the secrets of sweet peas. In Zone 7 or colder, plant them in very late winter or early spring as soon as the soil is dry enough to work. (Do not wait until last frost.) In the coldest parts of the country, get a jump on the season by starting sweet peas indoors in six-packs or Jiffy pots. Harden seedlings off for at least a week, and then set them out into the garden as soon as the soil can be worked. If you garden in mild winter climates (Zones 8, 9, or 10), plant sweet peas in the late fall so they can develop and bloom in late winter and early spring. Sweet peas are happiest with their heads in the sun and their roots deep in cool, moist soil. When possible, plant low-growing annuals in front of them to shade their roots.
+    Choose a well-drained site. Alkaline soil is best; sprinkle some powdered lime on the surface if your soil tends to be acidic.
+    Prepare a rich soil by mixing in generous amounts of compost and well-rotted manure to a depth of 2 feet. (Learn more about soil amendments and preparing soil for planting.)
+    Prior to planting, you’re going to want to dig a nice deep trench of about 4 inches in depth.
+    After you dig the trench, make holes with a pencil, drop in the seeds, and press down on the soil to firm it and shut out any light.
+    Before planting, soak the seeds in water for 24 hours. Then nick the seeds with a nail file before planting to speed sprouting. You do not need to soak seeds in a temperate climate.
+</p>
+      <p><strong>Requires:</strong> Full Sunlight,  cool soil</p>
+	<p><strong>Best Season for Growth: </strong>Early spring, Late winter</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6h6RMz3LZpsRmnZXh8Xk8oResCf0GsWv4Y2qRL7fibgo6QLK" alt="" style="width:304px;height:150px;">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pVyHUOPT6ZGAM0I65ye5bniiAowrrP8kwA1RxK5AhcfLhUed" alt="Mountain View" style="width:304px;height:150px;">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-pink">Snapdragon</h1>
+      <p><strong>Symbolism: </strong>Deception, graciousness</p>
+	<p><strong>Flower Color:</strong></p>
+	<p><strong>Gardening Tips: </strong>After planting snapdragons in a full sun location with well draining soil, snapdragon care should include a few well-placed clips to manipulate this plant into a bushy, filled-out specimen. Clip the top stem and any long side shoots to encourage more flowers and a more attractive planting. Tall varieties of snapdragons may require staking to remain upright. When blooms begin to fade due to summer’s heat, clip the plant by one-third to one-half and expect more blooms when temperatures begin to cool in fall. Intermingle plantings of snapdragon with heat-loving Angelonia for a similarly formed plant in the summer flower bed. Further care of snapdragons includes appropriate watering. When growing snapdragon, keep moist for the first few weeks. Once established, snapdragon care includes regular watering. Provide approximately an inch of water per week in times of no rainfall. Water near the crown of the plant and avoid overhead watering to keep your snapdragon healthy. Once established, let soil dry about an inch deep before watering. Snapdragon care includes the removal of spent blooms. Mulch is appropriate when growing snapdragon. Though mostly sold as an annual, proper care of snapdragons may encourage them to return next year, as they are actually a short-lived perennial plant.
+
+Read more at Gardening Know How: Planting Snapdragons In The Garden: How To Grow Snapdragons https://www.gardeningknowhow.com/ornamental/flowers/snapdragon/growing-snapdragon.htm</p>
+      <p><strong>Requires:</strong> Full Sunlight,  water an inch into the soil once a week</p>
+	<p><strong>Best Season for Growth:</strong></p>
+    </div>
+    <div class="w3-third w3-container">
+       <img src="https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/51/74/slider_detail/uploads/plant/1429017941-e2e28b0384c5c96cd/26568204_m.jpg" alt="Mountain View" style="width:300px;height:150px;">
+        <img src="http://www.newplantsandflowers.com/wp-content/uploads/Antirrhinum-majus-Trumpet-Pink-%E2%80%93-photo-PanAmerican-Seed-2.jpg" alt="Mountain View" style="width:300px;height:150px;">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-pink">Cherry Blossom</h1>
+      <p><strong>Symbolism:</strong> Good News</p>
+	<p><strong>Flower Color: </strong>Pink, white</p>
+	<p><strong>Gardening Tips:</strong>Ornamental cherries grow best in fertile, moist but well-drained soil in full sun, although they tolerate partial shade and a drier soil once they're established. Make sure there's ample room for the tree to grow because some mature into large trees. Water the tree thoroughly after planting, and apply a mulch, keeping it away from the trunk. Water for the first two years. Check the tie often and loosen it if need be. In a couple of years, you can remove the stake because the tree will be fully established.</p>
+      <p><strong>Requires: </strong>Full Sunlight, Don't overexpose to heat or cold. </p>
+	<p><strong>Best Season for Growth:</strong>Fall, soil should be well-drained, water moderately(once a week)</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbGhK00gjTr5Lk_WIOMctNFyBtiyXNUwBZwmiD9WbU51QoKaX" alt="Mountain View" style="width:300px;height:150px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOGqGnsIJAjXTZea9JfqMEmvYnU_wIrKrjpfyU5IP1__IfTWld" alt="Mountain View" style="width:300px;height:150px;">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/">1</a>
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/page2">2</a>
+      <a class="w3-button w3-hover-black" href="http://127.0.0.1:8000/page3">3</a>
+      <a class="w3-button w3-black" href="http://127.0.0.1:8000/page4">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Flower App Project for Cis4930 Summer 2017</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
