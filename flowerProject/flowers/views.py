@@ -7,14 +7,12 @@ from django.core.mail import EmailMessage
 from django.shortcuts import redirect
 from django.template import Context
 from django.template.loader import get_template
-
+from django.core.mail import send_mail, BadHeaderError
 
 #Index presents homepage to user 
 def index(request):
 	return render(request, 'index.html')
 
-def contact(request):
-	return render(request, 'contact.html')
 
 def about(request):
 	return render(request, 'about.html')
@@ -37,41 +35,32 @@ def page3(request):
 def page4(request):
 	return render(request, 'page4.html')
 
+def page5(request):
+	return render(request, 'page5.html')
+
+#Connects to backend email server using mailgun
+#Username: FlowerProject4930@gmail.com
+#Password: cis4930flower
 
 def contact(request):
-    form_class = ContactForm
-	#If form submitted, check that valid form was sent and each feild has valid data
-    if request.method == 'POST':
-        form = form_class(data=request.POST)
-	
+    if request.method == 'GET':
+        form = ContactForm()
+    else:
+        form = ContactForm(request.POST)
         if form.is_valid():
-            contact_name = request.POST.get('contact_name', '')
-            contact_email = request.POST.get('contact_email', '')
-            form_content = request.POST.get('content', '')
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['tj14@my.fsu.edu'])
+            except BadHeaderError:
+                return HttpResponse('Invalid.')
+            return redirect('success')
+    return render(request, "contact.html", {'form': form})
 
-            # Send contact form info to email 
-            template = get_template('contact_template.txt')
-	    
-            context = Context({
-                'contact_name': contact_name,
-                'contact_email': contact_email,
-                'form_content': form_content,
-            })
-            content = template.render(context)
-	    #content=render_to_string("contact_template.txt",context)
-            email = EmailMessage(
-                "New contact form submission",
-                content,
-                "Flowers" +'',
-                ['tj14@my.fsu.edu'],
-                headers = {'Reply-To': contact_email }
-            )
-            email.send()
-            return redirect('contact')
 
-    return render(request, 'contact.html', {
-        'form': form_class,
-    })
+def success(request):
+    return render(request, 'success.html')
 
 #Class used to upload images 
 def upload_pic(request):
