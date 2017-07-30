@@ -5,6 +5,16 @@ from django.db import models
 
 
 # Create your models here.
+
+from django.db import models
+
+class Profile(models.Model):
+   name = models.CharField(max_length = 50)
+   picture = models.ImageField(upload_to = 'pictures')
+
+   class Meta:
+      db_table = "profile"
+
 class Flowers(models.Model):
 	title=models.CharField(max_length=200)
 	text=models.TextField()
@@ -13,7 +23,6 @@ class Flowers(models.Model):
 	def _str_(self):
 		return self.title
 
-class ExampleModel(models.Model):
-    model_pic = models.ImageField(upload_to = 'media/', default = '')
+
 
 

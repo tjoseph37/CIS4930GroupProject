@@ -51,43 +51,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <h4>Identify your flower below. Please choose an image an image to identify:</h4>
  <div class="container">  
  
+<html>
+   <body>
+   
+      {% if saved %}
+         <strong>Your image was identified.</strong>
+      {% endif %}
+      
+      {% if not saved %}
+         <strong>Your image could not be identified.</strong>
+      {% endif %}
+      
+   </body>
+</html>
 
- <form name = "form" enctype = "multipart/form-data" 
-         action = "{% url "saved" %}" method = "POST" >{% csrf_token %}
-         
-         <div style = "max-width:300px;">
-          
-         </div>
-			
-         <br>
-         
-         <div style = "max-width:300px;">
-            <center> 
-               <input type = "file" style = "margin-left:20%;" 
-                  placeholder = "Picture" name = "picture" />
-            </center>
-         </div>
-			
-         <br>
-         
-         <div style = "max-width:470px;">
-            <center> 
-            
-               <button style = "border:0px;background-color:#f12ae8; margin-top:3%; 
-                  height:35px; width:80%; margin-left:19%;" type = "submit" value = "Login" >
-                  <strong>Identify</strong>
-               </button>
-               
-            </center>
-         </div>
-         
-      </form>
  
 
-
-
-</form>
- 
     
   
   
@@ -139,3 +118,9 @@ function w3_close() {
 
 </body>
 </html>
+
+
+
+
+
+

@@ -33,7 +33,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000">Homepage</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000">Upload and Identify Flower</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/flowers">Upload and Identify Flower</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/encrypt">Encrypt Flower</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/bluetooth">Bluetooth</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="http://127.0.0.1:8000/about">About</a>
@@ -48,19 +48,43 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div class="w3-row w3-padding-64">
 <h1>Encrypt an Image!</h1>
  <div class="container">  
+<h4>Please upload an image: </h4>
 
-<div class="w3-row w3-padding-64">
-</div>
-  <p>Please specify an image:<br>
-<input type="file" name="datafile" size="40">
-</p>
-<div>
-<input type="submit" value="Send">
+<form name = "form" enctype = "multipart/form-data" 
+         action = "{% url "saveEncrypt" %}" method = "POST" >{% csrf_token %}
+         
+         <div style = "max-width:300px;">
+          
+         </div>
+			
+         <br>
+         
+         <div style = "max-width:300px;">
+            <center> 
+               <input type = "file" style = "margin-left:20%;" 
+                  placeholder = "Picture" name = "picture" />
+            </center>
+         </div>
+			
+         <br>
+         
+         <div style = "max-width:300px;">
+            <center> 
+            
+               <button style = "border:0px;background-color:#57f12a; margin-top:3%; 
+                  height:35px; width:80%; margin-left:19%;" type = "submit" value = "Login" >
+                  <strong>Identify</strong>
+               </button>
+               
+            </center>
+         </div>
+         
+      </form>
+
+
 </div>
 </form>
-  {% if uploaded_file_url %}
-    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
-  {% endif %}
+ 
 
   <p><a href="http://127.0.0.1:8000">Return to home</a></p>
  

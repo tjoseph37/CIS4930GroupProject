@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html>
-<title>Upload Image</title>
+<title>Encrypt Image</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,7 +10,7 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body bgcolor="#40E0D0">
+<body bgcolor="#FF1493">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -19,8 +18,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Flower App</a>
     <a href="http://127.0.0.1:8000" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Homepage</a>
-    <a href="http://127.0.0.1:8000/flowers" class="w3-bar-item w3-button w3-hide-small w3-white">Upload and Identify Flower</a>
-    <a href="http://127.0.0.1:8000/encrypt" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Encrypt Flower</a>
+    <a href="http://127.0.0.1:8000/flowers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Upload and Identify Flower</a>
+    <a href="http://127.0.0.1:8000/encrypt" class="w3-bar-item w3-button w3-hide-small w3-white">Encrypt Flower</a>
     <a href="http://127.0.0.1:8000/bluetooth" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Bluetooth</a>
     <a href="http://127.0.0.1:8000/about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">About</a>
     <a href="http://127.0.0.1:8000/contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
@@ -47,53 +46,34 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
 <div class="w3-row w3-padding-64">
-<h1>Upload an Image!</h1>
-<h4>Identify your flower below. Please choose an image an image to identify:</h4>
+<h1>Encrypt an Image!</h1>
  <div class="container">  
- 
+<h4>Please upload an image: </h4>
 
- <form name = "form" enctype = "multipart/form-data" 
-         action = "{% url "saved" %}" method = "POST" >{% csrf_token %}
-         
-         <div style = "max-width:300px;">
-          
-         </div>
-			
-         <br>
-         
-         <div style = "max-width:300px;">
-            <center> 
-               <input type = "file" style = "margin-left:20%;" 
-                  placeholder = "Picture" name = "picture" />
-            </center>
-         </div>
-			
-         <br>
-         
-         <div style = "max-width:470px;">
-            <center> 
-            
-               <button style = "border:0px;background-color:#f12ae8; margin-top:3%; 
-                  height:35px; width:80%; margin-left:19%;" type = "submit" value = "Login" >
-                  <strong>Identify</strong>
-               </button>
-               
-            </center>
-         </div>
-         
-      </form>
- 
+<html>
+   <body>
+   
+      {% if saved %}
+         <strong>Your image was identified.</strong>
+      {% endif %}
+      
+      {% if not saved %}
+         <strong>Your image could not be identified.</strong>
+      {% endif %}
+      
+   </body>
+</html>
 
-
-
+</div>
 </form>
  
-    
-  
-  
+
   <p><a href="http://127.0.0.1:8000">Return to home</a></p>
  
   
+</div>
+
+<div class="w3-row w3-padding-64">
 </div>
 <div class="w3-row w3-padding-64">
 </div>

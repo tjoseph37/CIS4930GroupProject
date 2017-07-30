@@ -85,7 +85,7 @@ DATABASES = {
     }
 }
 
-#Email to 
+#Email to Mailgun, username:FlowerProject4930@gmail.com password: cis4930flower
 EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend' 
 DEFAULT_FROM_EMAIL = 'tj14@my.fsu.edu'
 EMAIL_HOST_USER = ''

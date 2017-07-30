@@ -8,6 +8,9 @@ from django.shortcuts import redirect
 from django.template import Context
 from django.template.loader import get_template
 from django.core.mail import send_mail, BadHeaderError
+from flowers.forms import ProfileForm
+from flowers.models import Profile
+import socket
 
 #Index presents homepage to user 
 def index(request):
@@ -63,12 +66,39 @@ def success(request):
     return render(request, 'success.html')
 
 #Class used to upload images 
-def upload_pic(request):
-    if request.method == 'POST':
-        form = ImageUploadForm(request.POST, request.FILES)
-        if form.is_valid():
-            m = ExampleModel.objects.get(pk=course_id)
-            m.model_pic = form.cleaned_data['image']
-            m.save()
-            return HttpResponse('image upload success')
-    return HttpResponseForbidden('allowed only via POST')
+def SaveProfile(request):
+   saved = False
+   
+   if request.method == "POST":
+      #Get the posted form
+      MyProfileForm = ProfileForm(request.POST, request.FILES)
+      
+      if MyProfileForm.is_valid():
+         profile = Profile()
+         profile.name = MyProfileForm.cleaned_data["name"]
+         profile.picture = MyProfileForm.cleaned_data["picture"]
+         profile.save()
+         saved = True
+   else:
+      MyProfileForm = Profileform()
+		
+   return render(request, 'saved.html', locals())
+
+''''-Sockets to connect to other user, each user has RSA '''
+def SaveEncrypt(request):
+   saved = False
+   
+   if request.method == "POST":
+      #Get the posted form
+      MyProfileForm = ProfileForm(request.POST, request.FILES)
+      
+      if MyProfileForm.is_valid():
+         profile = Profile()
+         profile.name = MyProfileForm.cleaned_data["name"]
+         profile.picture = MyProfileForm.cleaned_data["picture"]
+         profile.save()
+         saved = True
+   else:
+      MyProfileForm = Profileform()
+		
+   return render(request, 'saveEncrypt.html', locals())
