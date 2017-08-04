@@ -11,7 +11,7 @@ url(r'^saved', views.SaveProfile, name='saved'),
 url(r'^saveEncrypt', views.SaveEncrypt, name='saveEncrypt'), 
 url(r'^encrypt', views.encrypt, name='encrypt'),
 url(r'^page2', views.page2, name='page2'),
-url(r'^bluetooth', views.bluetooth, name='bluetooth'),
+
 url(r'^page3', views.page3, name='page3'), 
 url(r'^page4', views.page4, name='page4'),
 url(r'^page5', views.page5, name='page5'),
